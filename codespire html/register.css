@@ -1,0 +1,147 @@
+body {
+  color: black;
+  /* background-image: url(/bg2.jpg); */
+  /* background-color: #4000cb6c; */
+}
+#qrImage {
+  width: 50%;
+}
+.imageDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#regContainer {
+  padding: 30px;
+  border-radius: 20px;
+  /* color: #5c55e1; */
+  color: #243b67;
+  width: 50vw;
+  position: relative;
+  font-size: 1.25rem;
+  background-color: rgba(169, 169, 169, 0.045);
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.mandatory {
+  color: red;
+}
+.input-border {
+  outline: 0;
+  border-width: 0 0 3px;
+  border-color: #c27dfc;
+}
+/* input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue
+}*/
+.input-border:focus {
+  border-color: rgb(3, 184, 3);
+  box-shadow: none;
+}
+/* #glass {
+  height: 100%;
+  width: 50vw;
+  background-color: grey;
+  opacity: 0.2;
+  box-shadow: 0px 0px 10px black;
+  position: absolute;
+  margin-left: 24.5vw;
+  border-radius: 20px;
+}
+#glass2 {
+  box-sizing: border-box;
+  height: 100%;
+  width: 50vw;
+  background-color: grey;
+  opacity: 0.2;
+  box-shadow: 0px 0px 10px black;
+  position: absolute;
+  margin-left: 24.5vw;
+  border-radius: 20px;
+} */
+#logo {
+  width: 100%;
+}
+#headContainer {
+  width: 50vw;
+}
+#headContainer > .row {
+  margin: 20px 0px;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+#regHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5649a3;
+}
+#subBut {
+  background: #8968cf;
+  border: 0px;
+}
+.FLName {
+  display: flex;
+  justify-content: space-between;
+}
+.FLName > .mb-3 {
+  width: 49%;
+}
+#college-info > .mb-3 {
+  width: 32%;
+}
+.member-name {
+  color: #347bff;
+}
+.teamDiv {
+  border: 3px #243b67 solid;
+  border-radius: 10px;
+}
+.memFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.memFlex > div {
+  flex: 0.49;
+}
+.Alternate-Method{
+  text-decoration: none;
+  color: crimson;
+}
+.Alternate-Method-Link{
+  text-decoration: none;
+  /* color: green; */
+  text-align: center;
+}
+.Alternate-Method u{
+  color: #347bff;
+}
+
+@media screen and (max-width: 433px) {
+  #headContainer > .row {
+    display: flex;
+    margin: 20px 0px;
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  #logo {
+    flex: 5;
+    width: 150%;
+  }
+  #regHead {
+    flex: 2;
+  }
+  #regContainer {
+    padding: 20px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    width: 95vw;
+  }
+  #headContainer {
+    width: 95vw;
+  }
+  input::placeholder {
+    font-size: 0.85rem;
+  }
+}

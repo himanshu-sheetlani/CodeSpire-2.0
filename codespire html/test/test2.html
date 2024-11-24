@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    num1 <input name="num1" id="num1" type="number" /><br />
+    num2<input name="num2" id="num2" type="number" /><br />
+    num3<input name="num3" id="num3" type="number" /><br />
+    <input type="button" value="calculate" onClick="calculate()" />
+    <script>
+      function calculate() {
+        const num1 = parseInt(document.getElementById("num1").value);
+        const num2 = parseInt(document.getElementById("num2").value);
+        const num3 = parseInt(document.getElementById("num3").value);
+        const sum = num1 + num2 + num3;
+        const avg = sum / 3;
+        const product = num1 * num2 * num3;
+        const smallest = Math.min(num1, num2, num3);
+        const greatest = Math.max(num1, num2, num3);
+        if (num1 != null) {
+          alert(
+            "sum=" +
+              sum +
+              "  average=" +
+              avg +
+              "  product=" +
+              product +
+              "  smallest=" +
+              smallest +
+              "  greatest=" +
+              greatest
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

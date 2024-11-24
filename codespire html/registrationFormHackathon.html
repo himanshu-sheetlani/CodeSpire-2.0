@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Contest</title> 
+    <link href="../img/CodeSpire_logo-04.png" rel="icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="register.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var max_fields = 3;
+        var wrapper = $(".container1");
+        var add_button = $(".add_form_field");
+
+        var x = 1;
+        $(add_button).click(function (e) {
+          e.preventDefault();
+          if (x < max_fields) {
+            x++;
+            $(wrapper).append(
+              `<div class="mb-3">
+                <label for="" class="form-label member-name">Member</label>
+                <div class="members">
+                  <div>
+                    Full Name
+                    <input
+                      required
+                      type="text"
+                      class="form-control input-border"
+                      id=""
+                      aria-describedby="emailHelp"
+                      placeholder="Full Name..."
+                    />
+                  </div>
+                  <div class="mt-2 memFlex">
+                    <div>
+                      Email
+                      <input
+                        required
+                        type="email"
+                        class="form-control input-border"
+                        id=""
+                        aria-describedby="emailHelp"
+                        placeholder="Email..."
+                      />
+                    </div>
+                    <div>
+                      Contact No.
+                      <input
+                        required
+                        type="tel"
+                        class="form-control input-border"
+                        id=""
+                        aria-describedby="emailHelp"
+                        placeholder="Contact No..."
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-2 memFlex">
+                    <div class="mb-3">
+                      <label for="CollegeCity" class="form-label"
+                        >College City</label
+                      >
+                      <input
+                        required
+                        type="text"
+                        class="form-control input-border"
+                        id="CollegeCity"
+                        aria-describedby="emailHelp"
+                        placeholder="College City..."
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="College" class="form-label"
+                        >College Name</label
+                      >
+                      <input
+                        required
+                        type="text"
+                        class="form-control input-border"
+                        id="College"
+                        aria-describedby="emailHelp"
+                        placeholder="College..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn mt-2 btn-danger delete" id="delete">
+                Delete -
+              </button>
+              </div>`
+            ); //add input box
+          } else {
+            alert("You Reached the limits");
+          }
+        });
+
+        $(wrapper).on("click", ".delete", function (e) {
+          e.preventDefault();
+          $(this).parent("div").remove();
+          x--;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container text-center" id="headContainer">
+      <div class="row">
+        <div class="col">
+          <img src="../img/codespireFinalLogo.png" alt="logo" id="logo" />
+        </div>
+
+        <div class="col" id="regHead">Project Contest</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container mb-5" id="regContainer">
+        <form class="mb-2">
+          <div class="FLName">
+            <div class="mb-3">
+              <label for="FName" class="form-label"
+                >First Name <span class="mandatory">*</span></label
+              >
+              <input
+                required
+                type="text"
+                class="form-control input-border"
+                id="FName"
+                aria-describedby="emailHelp"
+                placeholder="First Name..."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="LName" class="form-label"
+                >Last Name <span class="mandatory">*</span></label
+              >
+              <input
+                required
+                type="text"
+                class="form-control input-border"
+                id="LName"
+                aria-describedby="emailHelp"
+                placeholder="Last Name..."
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="Email" class="form-label"
+              >Email (College mail preferred)
+              <span class="mandatory">*</span></label
+            >
+            <input
+              required
+              type="email"
+              class="form-control input-border"
+              id="Email"
+              aria-describedby="emailHelp"
+              placeholder="Email..."
+            />
+          </div>
+          <div class="mb-3">
+            <label for="EnrollNum" class="form-label"
+              >Enrollment Number (optional)</label
+            >
+            <input
+              type="text"
+              class="form-control input-border"
+              id="EnrollNum"
+              aria-describedby="emailHelp"
+              placeholder="Enrollment Number..."
+            />
+          </div>
+          <div class="FLName">
+            <div class="mb-3">
+              <label for="ContactNo" class="form-label"
+                >Contact Number <span class="mandatory">*</span></label
+              >
+              <input
+                required
+                type="tel"
+                class="form-control input-border"
+                id="ContactNo"
+                aria-describedby="emailHelp"
+                placeholder="Contact Number..."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="WhatsappNo" class="form-label"
+                >Whatsapp Number <span class="mandatory">*</span></label
+              >
+              <input
+                required
+                type="tel"
+                class="form-control input-border"
+                id="WhatsappNo"
+                aria-describedby="emailHelp"
+                placeholder="Whatsapp Number..."
+              />
+            </div>
+          </div>
+          <!-- <div class="mb-3">
+            <label for="College" class="form-label"
+              >College Name <span class="mandatory">*</span></label
+            >
+            <input
+              required
+              type="text"
+              class="form-control input-border"
+              id="College"
+              aria-describedby="emailHelp"
+              placeholder="College..."
+            />
+          </div>
+          <div id="college-info" class="FLName">
+            <div class="mb-3">
+              <label for="Semester" class="form-label"
+                >Current Semester <span class="mandatory">*</span></label
+              >
+              <input
+                required
+                type="number"
+                class="form-control input-border"
+                id="Semester"
+                aria-describedby="emailHelp"
+                placeholder="Current Sem..."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="CollegeCity" class="form-label"
+                >College City <span class="mandatory">*</span></label
+              >
+              <input
+                required
+                type="text"
+                class="form-control input-border"
+                id="CollegeCity"
+                aria-describedby="emailHelp"
+                placeholder="College City..."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="CollegeState" class="form-label"
+                >College State <span class="mandatory">*</span></label
+              >
+              <input
+                required
+                type="text"
+                class="form-control input-border"
+                id="CollegeState"
+                aria-describedby="emailHelp"
+                placeholder="College State..."
+              />
+            </div>
+          </div> -->
+          <div class="mb-3 teamDiv">
+            <fieldset class="m-3" id="teamField">
+              <legend>Team Details</legend>
+              <div class="mb-3">
+                <label for="Lead" class="form-label member-name">Leader</label>
+                <div class="members">
+                  <div>
+                    Full Name <span class="mandatory">*</span>
+                    <input
+                      required
+                      type="text"
+                      class="form-control input-border"
+                      id="Lead"
+                      aria-describedby="emailHelp"
+                      placeholder="Full Name..."
+                    />
+                  </div>
+                  <div class="mt-2 memFlex">
+                    <div>
+                      Email <span class="mandatory">*</span>
+                      <input
+                        required
+                        type="email"
+                        class="form-control input-border"
+                        id=""
+                        aria-describedby="emailHelp"
+                        placeholder="Email..."
+                      />
+                    </div>
+                    <div>
+                      Contact No. <span class="mandatory">*</span>
+                      <input
+                        required
+                        type="tel"
+                        class="form-control input-border"
+                        id=""
+                        aria-describedby="emailHelp"
+                        placeholder="Contact No..."
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-2 memFlex">
+                    <div class="mb-3">
+                      <label for="CollegeCity" class="form-label"
+                        >College City <span class="mandatory">*</span></label
+                      >
+                      <input
+                        required
+                        type="text"
+                        class="form-control input-border"
+                        id="CollegeCity"
+                        aria-describedby="emailHelp"
+                        placeholder="College City..."
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="College" class="form-label"
+                        >College Name <span class="mandatory">*</span></label
+                      >
+                      <input
+                        required
+                        type="text"
+                        class="form-control input-border"
+                        id="College"
+                        aria-describedby="emailHelp"
+                        placeholder="College..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="2" class="form-label member-name">Member</label>
+                <div class="members">
+                  <div>
+                    Full Name <span class="mandatory">*</span>
+                    <input
+                      required
+                      type="text"
+                      class="form-control input-border"
+                      id="2"
+                      aria-describedby="emailHelp"
+                      placeholder="Full Name..."
+                    />
+                  </div>
+                  <div class="mt-2 memFlex">
+                    <div>
+                      Email <span class="mandatory">*</span>
+                      <input
+                        required
+                        type="email"
+                        class="form-control input-border"
+                        id=""
+                        aria-describedby="emailHelp"
+                        placeholder="Email..."
+                      />
+                    </div>
+                    <div>
+                      Contact No. <span class="mandatory">*</span>
+                      <input
+                        required
+                        type="tel"
+                        class="form-control input-border"
+                        id=""
+                        aria-describedby="emailHelp"
+                        placeholder="Contact No..."
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-2 memFlex">
+                    <div class="mb-3">
+                      <label for="CollegeCity" class="form-label"
+                        >College City <span class="mandatory">*</span></label
+                      >
+                      <input
+                        required
+                        type="text"
+                        class="form-control input-border"
+                        id="CollegeCity"
+                        aria-describedby="emailHelp"
+                        placeholder="College City..."
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="College" class="form-label"
+                        >College Name <span class="mandatory">*</span></label
+                      >
+                      <input
+                        required
+                        type="text"
+                        class="form-control input-border"
+                        id="College"
+                        aria-describedby="emailHelp"
+                        placeholder="College..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container1"></div>
+              <button
+                type="button"
+                class="btn btn-primary add_form_field"
+                id="addButton"
+              >
+                New Member +
+              </button>
+              <!-- <div class="mb-3">
+                <label for="3" class="form-label">Member 3</label>
+                <div class="members">
+                  <div>
+                    Full Name <span class="mandatory">*</span>
+                    <input
+                      required
+                      type="text"
+                      class="form-control input-border"
+                      id="3"
+                      aria-describedby="emailHelp"
+                      placeholder="Full Name..."
+                    />
+                  </div>
+                  <div id="memFlex" class="mt-2">
+                    <div>
+                      Email <span class="mandatory">*</span>
+                      <input
+                        required
+                        type="email"
+                        class="form-control input-border"
+                        id=""
+                        aria-describedby="emailHelp"
+                        placeholder="Email..."
+                      />
+                    </div>
+                    <div>
+                      Contact No. <span class="mandatory">*</span>
+                      <input
+                        required
+                        type="tel"
+                        class="form-control input-border"
+                        id=""
+                        aria-describedby="emailHelp"
+                        placeholder="Contact No..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="4" class="form-label">Member 4</label>
+                <div class="members">
+                  <div>
+                    Full Name <span class="mandatory">*</span>
+                    <input
+                      required
+                      type="text"
+                      class="form-control input-border"
+                      id="4"
+                      aria-describedby="emailHelp"
+                      placeholder="Full Name..."
+                    />
+                  </div>
+                  <div id="memFlex" class="mt-2">
+                    <div>
+                      Email <span class="mandatory">*</span>
+                      <input
+                        required
+                        type="email"
+                        class="form-control input-border"
+                        id=""
+                        aria-describedby="emailHelp"
+                        placeholder="Email..."
+                      />
+                    </div>
+                    <div>
+                      Contact No. <span class="mandatory">*</span>
+                      <input
+                        required
+                        type="tel"
+                        class="form-control input-border"
+                        id=""
+                        aria-describedby="emailHelp"
+                        placeholder="Contact No..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </fieldset>
+          </div>
+          <button type="submit" class="btn btn-primary" id="subBut">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

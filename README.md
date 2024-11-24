@@ -1,1 +1,3 @@
-# CodeSpire-2.0
+# codespire
+
+https://patil-tanay.github.io/codespire/
