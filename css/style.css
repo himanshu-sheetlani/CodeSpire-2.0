@@ -814,7 +814,7 @@ padding: 3% 10% 7% 10%;
 /*--------------------------------------------------------------
 # supporters Section
 --------------------------------------------------------------*/
-
+/*----------------------------------------------------------
 #supporters {
   padding: 60px 0;
 }
@@ -853,12 +853,18 @@ padding: 3% 10% 7% 10%;
   transition: all 0.4s ease-in-out;
 }
 
+-----------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
 
 #faq {
   padding: 60px 0;
+}
+
+#faqHeader{
+  font-family: "Amatic SC", sans-serif;
 }
 
 #faq #faq-list {
@@ -874,15 +880,15 @@ padding: 3% 10% 7% 10%;
   padding: 18px 0;
   display: block;
   position: relative;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 24px;
   line-height: 24px;
   font-weight: 600;
   padding-right: 20px;
 }
 
 #faq #faq-list i {
-  font-size: 24px;
+  font-size: 28px;
   position: absolute;
   right: 0;
   top: 16px;
@@ -890,19 +896,24 @@ padding: 3% 10% 7% 10%;
 
 #faq #faq-list p {
   margin-bottom: 20px;
+  font-family: "Amatic SC", sans-serif;
+  font-size:22px;
+  font-weight: 450;
+  font-stretch:ultra-expanded;
 }
 
 #faq #faq-list a.collapse {
-  color: #1a0f60;
+  color: white;
 }
 
 #faq #faq-list a.collapsed {
-  color: rgb(27, 8, 78);
+  color: white;
 }
 
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
 }
+
 
 
 
