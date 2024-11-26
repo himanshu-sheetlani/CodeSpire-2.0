@@ -1,150 +1,138 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.dcontainer{
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.dcontainer {
     position: relative;
-    min-height: 100vh;
-}
-
-.dcontainer .dptitle{
-    font-size: 40px;
-    font-weight: normal;
-    padding: 15px;
-    color: #333;
+    padding: 5rem 2rem;
     text-align: center;
 }
 
-.dcontainer .image-container{
+.section-title {
+    font-size: 35px;
+    color: #d5006d;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.domain-boxes {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 85px;
-    justify-content: center;
-    padding: 20px;
+    gap: 20px;
+    margin-bottom: 3rem;
 }
 
-.dcontainer .image-container .image{
-    height: 250px;
-    width: 350px;
-    border-radius: 50px;
-    outline-style: auto;
-    overflow: hidden;
-    box-shadow: 0 15px 10px -5px rgba(0,0,0,.2);
-    cursor: pointer;
+.domain-box {
+    background: linear-gradient(45deg, #ff4081, #ff80ab);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 250px;
     text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.dcontainer .image-container .image img{
-    height: 75%;
-    width: 75%;
-    object-fit: cover;
-    transition: .2s linear;
+.domain-box h3 {
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.dcontainer .image-container .image:hover img{
-    transform: scale(.95);
+.domain-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-.dcontainer .popup-text{
+.bottom-line {
+    background: linear-gradient(to right, #ff4081, #ff80ab);
+    height: 5px;
+    width: 80%;
+    margin: 0 auto;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(1.1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.popup-text {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background : #80c9ac;
-    height: 58%;
-    width: 75%;
-    border-radius: 25px;
-    z-index: 100;
+    background: #fff;
+    width: 70%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
     display: none;
-    
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.dcontainer .popup-text span{
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 60px;
-    color: #004f7c;
-    cursor: pointer;
-    z-index: 100;
-}
-.centered{
-    color: #004f7c;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
+.popup-text .domain-title {
+    font-size: 28px;
+    color: #d5006d;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.dcontainer .popup-text .text{
-    position: fixed;
-    top: 100px;
-    left: 14px;
-    right: 17px;
-    text-align: center;
-    /* transform: translate(-50%, -50%); */
-    color: #004f7c;
-    font-size: 30px;
-    padding: 5px 100px;
-}
-
-.domain-title{
-    font-size: 40px;
-    color: #004f7c;
-    font-weight: bolder;
-    padding-top: 2.5rem;
-    text-align: center;
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 768px){
-    .dcontainer .popup-text {
-        height: 75%;
-        width: 75%;
-    }
-
-    .dcontainer .popup-text .text{
-        left: 47px;
-        font-size: 19px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .dcontainer .popup-text {
-        top: 17.5rem;
-        height: 44%;
-        width: 80%;
-    }
-
-    .dcontainer .popup-text .text {
-        font-size: 13px;
-    top: 87px;
-    left: 10px;
-    padding: 0px 10px;
+.popup-text .text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
     text-align: justify;
-    }
-
-    .dcontainer .popup-text span{
-        font-size: 50px;
-    }
-    
-    .domain-title{
-        padding: 1.5rem 1rem 0 1rem;
-        font-size: 1.2rem;
-    }
-
-    .dcontainer .image-container .image{
-        height: 200px;
-        width: 260px;
-    }
-
-    .centered{
-        font-size: 15px;
-    }
 }
 
-@media screen and (max-width: 444px){
-    .dcontainer .popup-text span{
-        font-size: 30px;
+.popup-close {
+    font-size: 30px;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.popup-text1, .popup-text2, .popup-text3, .popup-text4, .popup-text5 {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .domain-box {
+        width: 220px;
+        padding: 20px 15px;
+    }
+
+    .popup-text {
+        width: 90%;
+    }
+
+    .popup-text .domain-title {
+        font-size: 24px;
+    }
+
+    .popup-text .text {
+        font-size: 16px;
     }
 }
