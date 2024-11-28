@@ -30,9 +30,14 @@
     font-family: cursive;
 }
 
+
 img {
-  max-width: 100%;
+  max-width:100%;
   height: auto;
+}
+.hi {
+  max-width:25%;
+  height: 25%;
 }
 
 body {
