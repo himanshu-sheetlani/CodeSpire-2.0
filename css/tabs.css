@@ -138,9 +138,9 @@ body {
   background: var(--midnight-green);
 } */
 
-.timeline ol::-webkit-scrollbar-track {
-  background: var(--yellow);
-}
+/* .timeline ol::-webkit-scrollbar-track { */
+  /* background: var(--yellow); */
+/* } */
 
 .timeline ol {
   font-size: 0;
