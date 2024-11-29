@@ -1333,6 +1333,9 @@ padding: 3% 10% 7% 10%;
   #faq {
     padding: 8rem 0 9rem 0;
   }
+  .nav-ul{
+    display:none;
+  }
 }
 
 @media (min-width: 1024px) {
