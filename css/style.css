@@ -354,8 +354,6 @@ h6 {
   color: #fff;
 }
 
-Mobile Nav Styling
-
 #mobile-nav {
   position: fixed;
   top: 0;
@@ -1099,12 +1097,34 @@ padding: 3% 10% 7% 10%;
   font-size: 14px;
 }
 
-#footer .footer-top {
-  background: #6c6c6c;
-  padding: 30px 0 30px 0;
+.f_logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #6c6c6c;
+  padding: 30px;
 }
 
-#footer .footer-top .footer-info {
+.f_logo .col img{
+  width: 200px;
+  height: auto;
+}
+
+/* #footer .footer-top {
+  background: #6c6c6c;
+  padding: 30px 0 30px 0;
+  display: flex;
+  justify-content: center;
+} */
+
+/* #footer .footer-top .container{
+  width: 90%;
+  margin: 0;
+} */
+
+
+/* #footer .footer-top .footer-info {
   margin-bottom: -26px;
 }
 
@@ -1157,9 +1177,9 @@ padding: 3% 10% 7% 10%;
 #footer .footer-top .social-links a:hover {
   background: #000000;
   color: #fff;
-}
+} */
 
-#footer .footer-top h4 {
+/* #footer .footer-top h4 {
   font-size: 14px;
   font-weight: bold;
   color: #fff;
@@ -1167,9 +1187,9 @@ padding: 3% 10% 7% 10%;
   position: relative;
   padding-bottom: 12px;
   border-bottom: 2px solid #604c4f;
-}
+} */
 
-#footer .footer-top .footer-links {
+/* #footer .footer-top .footer-links {
   margin-bottom: 30px;
 }
 
@@ -1182,7 +1202,7 @@ padding: 3% 10% 7% 10%;
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
   color: #13191a; 
-  /* icon  */
+  icon 
   font-size: 18px;
 }
 
@@ -1214,7 +1234,7 @@ padding: 3% 10% 7% 10%;
 
 #footer .footer-top .footer-contact p {
   line-height: 26px;
-}
+} */
 
 .contForm{
   border:10px solid #2e9979;
@@ -1234,13 +1254,13 @@ padding: 3% 10% 7% 10%;
   font-size: 13px;
   color: #ddd;
 }
-#acropolis{
+/* #acropolis{
   width: 15rem;
   display: flex;
   justify-content: center;
   align-self: center;  
   position: relative;
-  /* right: 25px; */
+  right: 25px;
 }
 #codeSP{
   width: 15rem;
@@ -1248,7 +1268,7 @@ padding: 3% 10% 7% 10%;
   justify-content: center;
   align-self: center;  
   position: relative;
-  /* right: 25px; */
+  right: 25px;
 }
 #CSE{
   width: 11rem;
@@ -1256,8 +1276,8 @@ padding: 3% 10% 7% 10%;
   justify-content: center;
   align-self: center;
   position: relative;
-  /* top: 57px;
-  left: 18px; */
+  top: 57px;
+  left: 18px; 
 }
 #gdsc{
   width: 11rem;
@@ -1265,13 +1285,22 @@ padding: 3% 10% 7% 10%;
   justify-content: center;
   align-self: center;
   position: relative;
-  /* top: 18px; */
-}
+  top: 18px;
+} */
 
 .col{
   display: flex;
   justify-content: center;
   padding: 0 25px;
+}
+.col img{
+  width: 180px;
+  height: auto;
+}
+
+.container .row{
+  display: flex;
+  justify-content: space-between;
 }
 
 /*--------------------------------------------------------------
@@ -1336,7 +1365,8 @@ padding: 3% 10% 7% 10%;
     font-size: 2rem;
   }
   .btn img{
-    height: 70px;
+    height: 100px;
+    width: auto;
   }
 }
 
@@ -1391,6 +1421,9 @@ padding: 3% 10% 7% 10%;
   .fonts{
     font-size: 1.5rem;
   }
+  .btn img{
+    height: 70px;
+  }
 }
 
 @media (max-width: 770px) {
@@ -1416,6 +1449,9 @@ padding: 3% 10% 7% 10%;
   #faq #faq-list i {
     top: 13px;
   }
+  .col img{
+    margin: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1427,6 +1463,10 @@ padding: 3% 10% 7% 10%;
 @media (max-width: 574px) {
   #venue .venue-info h3 {
     font-size: 24px;
+  }
+  .btn img{
+    height: 60px;
+    margin: 0;
   }
 }
 
@@ -1459,17 +1499,12 @@ padding: 3% 10% 7% 10%;
     right: -8rem;
     bottom: 2.8rem;
   }
-  #acm{
+  #CSE{
     width: 7rem;
     bottom: -4rem;
     right: 15rem;
   }
-  #acmw{
-    width: 4rem;
-    left: 3rem;
-    bottom: -0.5rem;
-
-  }
+  
   #gdsc{
     left: 5rem;
     width: 7rem;
@@ -1483,6 +1518,10 @@ padding: 3% 10% 7% 10%;
   }
   .fonts{
     font-size: 1rem;
+  }
+  .btn img{
+    height: 50px;
+    padding: 0;
   }
 }
 
@@ -1545,7 +1584,7 @@ padding: 3% 10% 7% 10%;
     bottom: 0.2rem;
 }
 
-  #acm{
+  #CSE{
     width: 7rem;
     bottom: -0.5rem;
     left: 1.5rem;
@@ -1557,11 +1596,6 @@ padding: 3% 10% 7% 10%;
     bottom: 0rem;
   }
 
-  #acmw{
-    width: 4rem;
-    left: 6.5rem;
-    bottom: -0.5rem;
-  }
   #footer .footer-top {
     padding: 0px 0px 0px 0px;
 }
