@@ -252,78 +252,67 @@
       ============================-->
 
       <div class="dcontainer" id="domains">
-        <div class="section-header">
-          <br>
-          <h2>Domains </h2>
+        <h2 class="section-title">Explore Our Domains</h2>
+    
+        <!-- Domain Boxes -->
+        <div class="domain-boxes">
+            <div class="domain-box" onclick="Display1()">
+                <h3>Innovate for Business</h3>
+            </div>
+            <div class="domain-box" onclick="Display2()">
+                <h3>Innovate for Healthy Living</h3>
+            </div>
+            <div class="domain-box" onclick="Display3()">
+                <h3>Innovate for Security</h3>
+            </div>
+            <div class="domain-box" onclick="Display4()">
+                <h3>Innovate for Society</h3>
+            </div>
+            <div class="domain-box" onclick="Display5()">
+                <h3>Innovate for a Sustainable World</h3>
+            </div>
         </div>
-        <div class="image-container">
-          <div class="image">
-            <img src="./img/business.webp" alt="" onclick="Display1()"/>
-            <h2 class="centered">Innovate for Business</h2>
-          </div>
-          <div class="image">
-            <img src="./img/health.webp" alt="" onclick="Display2()"/>
-            <h2 class="centered">Innovate for Healthy Living</h2>
-          </div>
-          <div class="image">
-            <img src="./img/security.webp" alt="" onclick="Display3()"/>
-            <h2 class="centered">Innovate for Security</h2>
-          </div>
-          <div class="image">
-            <img src="./img/society.webp" alt="" onclick="Display4()"/>
-            <h2 class="centered">Innovate for Society</h2>
-          </div>
-          <div class="image">
-            <img src="./img/sustainable_world.webp" alt="" onclick="Display5()"/>
-            <h2 class="centered">Innovate for Sustainable World</h2>
-          </div>
+    
+        <!-- Bottom Pink Line with Animation -->
+        <div class="bottom-line"></div>
+    
+        <!-- Pop-up Text for Business Domain -->
+        <div class="popup-text popup-text1">
+            <span class="popup-close">&times;</span>
+            <h1 class="domain-title">Innovate for Business</h1>
+            <p class="text">Bring out the positive changes, introduce new workflows boosting the productivity of business models to stand out in the Industrial space!</p>
         </div>
-
-        <div class="popup-text">
-          <span onclick="Hide1()">&times;</span>
-          <h1 class="domain-title">Innovate for Bussiness</h1>
-          
-          <diiv class="textt">
-            <p class="text" id="t1">
-            Bring out the positive changes , introduce new
-            workflows boosting the productivity of business models to stand out in
-            the Industrial space !
-          </p>
-        </diiv>
+    
+        <!-- Pop-up Text for Healthy Living Domain -->
+        <div class="popup-text popup-text2">
+            <span class="popup-close">&times;</span>
+            <h1 class="domain-title">Innovate for Healthy Living</h1>
+            <p class="text">Develop innovative solutions for improving healthcare systems to help cater to current medical conditions.</p>
         </div>
-
-        <div class="popup-text" id="t2">
-          <span onclick="Hide2()">&times;</span>
-          <h1 class="domain-title">Innovate for Healthy Living</h1>
-          <p class="text">
-            Develop innovative solutions for improving healthcare system to help cater current medical conditions.
-          </p>
+    
+        <!-- Pop-up Text for Security Domain -->
+        <div class="popup-text popup-text3">
+            <span class="popup-close">&times;</span>
+            <h1 class="domain-title">Innovate for Security</h1>
+            <p class="text">In recent times, security and privacy are major concerns. Propose new groundbreaking ideas using cutting-edge technologies for improving people's safety.</p>
         </div>
-
-        <div class="popup-text" id="t3">
-          <span onclick="Hide3()">&times;</span>
-          <h1 class="domain-title">Innovate for Security</h1>
-          <p class="text">
-            In recent time security and privacy are major concern. Propose new groundbreaking ideas using cutting edge technologies for improving people safety.
-          </p>
+    
+        <!-- Pop-up Text for Society Domain -->
+        <div class="popup-text popup-text4">
+            <span class="popup-close">&times;</span>
+            <h1 class="domain-title">Innovate for Society</h1>
+            <p class="text">Implement technology in ingenious ways for the benefit and development of society and to enhance the way we work and live!</p>
         </div>
-
-        <div class="popup-text" id="t4">
-          <span onclick="Hide4()">&times;</span>
-          <h1 class="domain-title">Innovate for Society</h1>
-          <p class="text">
-            Implement technology in ingenious ways for the benefit and development of society and to enhance the way we work and live ! 
-          </p>
+    
+        <!-- Pop-up Text for Sustainable World Domain -->
+        <div class="popup-text popup-text5">
+            <span class="popup-close">&times;</span>
+            <h1 class="domain-title">Innovate for a Sustainable World</h1>
+            <p class="text">Support the world by developing innovative, effective strategies and business solutions, shaping them to meet environmental challenges!</p>
         </div>
-
-        <div class="popup-text" id="t5">
-          <span onclick="Hide5()">&times;</span>
-          <h1 class="domain-title">Innovate for Sustainable World</h1>
-          <p class="text">
-            Support the world by developing innovative, effective strategies and business , shaping them to meet the 'Environmental Challenges' !
-          </p>
-        </div>
-      </div>
+    </div>
+    
+    
 
       <!--==========================
         Sponsors Section
@@ -397,34 +386,33 @@
       <!--==========================
         prizes Section
       ============================-->
-      
       <section id="prizes">
         <div class="container">
-          <div class="section-header">
-            <h2>Prizes</h2>
-          </div>
-          <div class="row">
-          
-            <div class="col-lg-3 prizes_image">
-              <img src="./img/prizes_image.png" alt="">
+          <div class="row align-items-center">
+            <!-- Prize Description -->
+            <div class="col-lg-6">
+              <div class="prize-card">
+                <h2>Prizes</h2>
+                <p>
+                  Imagine being rewarded for coding and ideating! As a Codespirean, not only will you grow as a learner, but you'll also get a chance to win cash rewards from an exciting prize pool of:
+                </p>
+                <h2 class="prize-amount">₹30,000</h2>
+                <p>
+                  Plus, selected participants can grab amazing internship opportunities from our sponsors.  
+                  <strong>So get ready to code, create, and conquer!</strong>
+                </p>
+              </div>
             </div>
-            <div class="col-lg-9">
-              
-              <p>What if someone told you that coding and ideating could be rewarding. Sounds interesting, right?
-
-                <br>
-
-                <h5>Well, being a codespirean will help you carve yourself as a learner and accolade you with attractive cash rewards from a whooping prize pool of  
-                </h5><h2>Rs. 50000</h2><h5>So buckle up to avail the attractive cash prizes. 
-                </h5>
-                Codespire also withholds some sponsors providing amazing and incredible <strong style="color: #ffefbb;"> internship opportunities </strong> for 
-                    selected participants.</p>
+      
+            <!-- Image with Animation -->
+            <div class="col-lg-6">
+              <div class="image-frame">
+                <img src="img/prizes.jpg" alt="Prize Image" class="prize-image">
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-
       <!--==========================
         F.A.Q Section
       ============================-->

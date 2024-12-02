@@ -1,125 +1,99 @@
 
+/* General Section Styling */
 #prizes {
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    color: #fff;
-    text-align: justify;
-    padding: 100px 0 165px 0;
-  }
-  
-  #prizes:before {
-    content: "";
-    background: rgba(13, 20, 41, 0.8);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  #prizes h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  #prizes h3 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  #prizes p {
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #fff;
-  }
-  
-  
-  #prizes li {
-    font-size: 19px;
-    /* font-weight: bold; */
-    font-family: 'Raleway';
-    /* text-transform: uppercase; */
-    margin-bottom: 10px;
-    color: #004f76;
-  }
-  
-  #prizes h3 {
+  background: linear-gradient(135deg, #1b1b1b, #5c0101);
+  padding: 100px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Prize Description Styling */
+.prize-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.prize-card h2 {
+  font-size: 36px;
+  color: #ffe57f;
+  text-shadow: 0 0 10px rgba(255, 229, 127, 0.8);
+}
+
+.prize-card p {
   font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #ffefbb;
-  }
-  
-  /* #prizes{
-  padding: 3% 10% 7% 10%;
-  }
-  #prizes p {
-    font-size: 19px;
-    font-family: 'Raleway';
-    margin-bottom: 10px;
-    color: #004f76;
-   
-    text-align: justify;
-  } */
-.prizes_image img{
-    height: 20rem;
-    position: absolute;
-    left: -8rem;
-    top: -2rem;
-}  
-
-#prizes h2{
-    color: #ffefbb;
-    text-align: center;
-}
-#prizes h5{
-    color: #ffefbb;
-    text-align: center;
+  line-height: 1.6;
+  margin: 15px 0;
 }
 
-#prizes p{
-  text-align: center;
+.prize-amount {
+  font-size: 48px;
+  color: #ff4d6d;
+  text-shadow: 0 0 15px rgba(255, 77, 109, 0.8);
 }
-@media screen and (max-width: 1024px) {
-  #prizes{
-   padding: 146px 0 165px 0;
+
+/* Image Styling with Animation */
+.image-frame {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border: 5px solid #ffe57f;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 229, 127, 0.5);
+}
+
+.prize-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: image-move 4s ease-in-out infinite;
+}
+
+/* Image Animation */
+@keyframes image-move {
+  0%, 100% {
+    transform: scale(1) translateY(0);
   }
-  .prizes_image img{
-    height: 13rem;
-    position: inherit;
-    left: -3rem;
-    top: 1rem;
+  50% {
+    transform: scale(1.05) translateY(-10px);
   }
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-  .prizes_image img{
-    height: 13rem;
-    position: inherit;
-    left: 13rem;
+  .prize-card h2 {
+    font-size: 28px;
   }
-}
 
-@media screen and (max-width: 320px) {
-  .prizes_image img{
-    height: 13rem;
-    position: inherit;
-    left: -6rem;
+  .prize-card p {
+    font-size: 16px;
   }
-}
 
-@media screen and (max-width: 480px) {
-  .prizes_image img {
-    height: 13rem;
-    position: inherit;
-    left: 2rem;
+  .prize-amount {
+    font-size: 36px;
+  }
+
+  .image-frame {
+    height: 250px;
   }
 }
 
