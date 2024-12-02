@@ -1,4 +1,5 @@
 
+
 html{
   scroll-behavior: smooth;
 }
@@ -261,9 +262,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
+
 
 
 
@@ -505,6 +508,7 @@ color: #ffefbb;
 # supporters Section
 --------------------------------------------------------------*/
 
+/*----------------------------------------------------------
 #supporters {
   padding: 60px 0;
 }
@@ -543,12 +547,19 @@ color: #ffefbb;
   transition: all 0.4s ease-in-out;
 }
 
+
+-----------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
 
 #faq {
   padding: 60px 0;
+}
+
+#faqHeader{
+  font-family: "Amatic SC", sans-serif;
 }
 
 #faq #faq-list {
@@ -564,15 +575,15 @@ color: #ffefbb;
   padding: 18px 0;
   display: block;
   position: relative;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 24px;
   line-height: 24px;
   font-weight: 600;
   padding-right: 20px;
 }
 
 #faq #faq-list i {
-  font-size: 24px;
+  font-size: 28px;
   position: absolute;
   right: 0;
   top: 16px;
@@ -580,14 +591,18 @@ color: #ffefbb;
 
 #faq #faq-list p {
   margin-bottom: 20px;
+  font-family: "Amatic SC", sans-serif;
+  font-size:22px;
+  font-weight: 450;
+  font-stretch:ultra-expanded;
 }
 
 #faq #faq-list a.collapse {
-  color: #1a0f60;
+  color: white;
 }
 
 #faq #faq-list a.collapsed {
-  color: rgb(27, 8, 78);
+  color: white;
 }
 
 #faq #faq-list a.collapsed i::before {
@@ -595,13 +610,12 @@ color: #ffefbb;
 }
 
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
 #footer {
-  background: #000000;
+  background: #4fb79e;
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
@@ -653,7 +667,6 @@ color: #ffefbb;
 .container .row{
   display: flex;
   justify-content: space-between;
-}
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
@@ -690,7 +703,6 @@ color: #ffefbb;
   #faq {
     padding: 8rem 0 9rem 0;
   }
-  
 }
 
 @media (min-width: 1024px) {
@@ -715,7 +727,6 @@ color: #ffefbb;
   .nav-menu a {
     padding: 8px 4px;
   }
-
   .other img{
     width: 70vw;
   }
@@ -842,8 +853,7 @@ color: #ffefbb;
   #logo img{
     width: 55vw;
     height: auto;
-  }
- 
+  } 
 
   .footLogo{
     width: 40vw;
@@ -871,8 +881,7 @@ color: #ffefbb;
     width: 7rem;
     bottom: -4rem;
     right: 15rem;
-  }
-  
+  }  
   #gdsc{
     left: 5rem;
     width: 7rem;
@@ -963,10 +972,9 @@ color: #ffefbb;
     width: 7rem;
     bottom: 0rem;
   }
-
   #footer .footer-top {
     padding: 0px 0px 0px 0px;
-}
+  }
 }
 @media (max-width: 460px) {
   #subscribe button {
@@ -1003,4 +1011,3 @@ color: #ffefbb;
   background: #4c8971;
   color: #fff;
 }
-
