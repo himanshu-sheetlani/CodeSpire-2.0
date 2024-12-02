@@ -98,7 +98,7 @@ h6 {
 }
 
 .section-header::before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 60px;
@@ -292,6 +292,8 @@ h6 {
   visibility: visible;
   width: 100%;
 }
+
+
 
 .nav-menu li.buy-tickets:hover a:before,
 .nav-menu li.buy-tickets.menu-active a:before {
@@ -493,15 +495,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro h1 span {
   color: #ffefbb;
-  font-size: xx-large;
-  font-family: "Montserrat", sans-serif;
+  font-size:xx-large;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #intro p {
   color: #ebebeb;
   font-weight: 700;
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0 5rem;
   word-spacing: 15px;
   letter-spacing: 1px;
@@ -519,7 +521,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -535,7 +537,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 120px;
   height: 120px;
@@ -563,8 +565,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: scale(20);
 }
 
+
 #intro .play-btn:hover::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -637,7 +640,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/back.jpg");
+  background: url("../img/about-bg.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -648,6 +651,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about:before {
   content: "";
+  background: rgba(13, 20, 41, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -656,44 +660,42 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about h2 {
-  font-size: 46px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: red;
-  font-family: "VT323";
+  color: #fff;
 }
 
 #about h3 {
-  font-size: 38px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: red;
-  font-family: "VT323";
+  color: #fff;
 }
 
 #about p {
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 20px;
   color: #fff;
-  font-family: "Poppins";
 }
+
 
 #about li {
   font-size: 19px;
   /* font-weight: bold; */
-  font-family: "Raleway";
+  font-family: 'Raleway';
   /* text-transform: uppercase; */
   margin-bottom: 10px;
-  color: red;
+  color: #004f76;
 }
 
 #about h3 {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #ffefbb;
+font-size: 18px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 10px;
+color: #ffefbb;
 }
 
 /* #about{
@@ -707,6 +709,7 @@ padding: 3% 10% 7% 10%;
  
   text-align: justify;
 } */
+
 
 /*--------------------------------------------------------------
 # Schedule Section
@@ -751,7 +754,7 @@ padding: 3% 10% 7% 10%;
 }
 
 #schedule .tab-pane {
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out .2s;
 }
 
 #schedule .schedule-item {
@@ -809,7 +812,7 @@ padding: 3% 10% 7% 10%;
 /*--------------------------------------------------------------
 # supporters Section
 --------------------------------------------------------------*/
-
+/*----------------------------------------------------------
 #supporters {
   padding: 60px 0;
 }
@@ -848,12 +851,18 @@ padding: 3% 10% 7% 10%;
   transition: all 0.4s ease-in-out;
 }
 
+-----------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
 
 #faq {
   padding: 60px 0;
+}
+
+#faqHeader{
+  font-family: "Amatic SC", sans-serif;
 }
 
 #faq #faq-list {
@@ -869,15 +878,15 @@ padding: 3% 10% 7% 10%;
   padding: 18px 0;
   display: block;
   position: relative;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 24px;
   line-height: 24px;
   font-weight: 600;
   padding-right: 20px;
 }
 
 #faq #faq-list i {
-  font-size: 24px;
+  font-size: 28px;
   position: absolute;
   right: 0;
   top: 16px;
@@ -885,19 +894,26 @@ padding: 3% 10% 7% 10%;
 
 #faq #faq-list p {
   margin-bottom: 20px;
+  font-family: "Amatic SC", sans-serif;
+  font-size:22px;
+  font-weight: 450;
+  font-stretch:ultra-expanded;
 }
 
 #faq #faq-list a.collapse {
-  color: #1a0f60;
+  color: white;
 }
 
 #faq #faq-list a.collapsed {
-  color: rgb(27, 8, 78);
+  color: white;
 }
 
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -992,7 +1008,7 @@ padding: 3% 10% 7% 10%;
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #13191a;
+  color: #13191a; 
   /* icon  */
   font-size: 18px;
 }
@@ -1014,7 +1030,7 @@ padding: 3% 10% 7% 10%;
   color: #040938;
 }
 
-#footer .footer-top .footer-links img {
+#footer .footer-top .footer-links img{
   height: 30px;
 }
 
@@ -1022,12 +1038,13 @@ padding: 3% 10% 7% 10%;
   height: 30px;
 }
 
+
 #footer .footer-top .footer-contact p {
   line-height: 26px;
 }
 
-.contForm {
-  border: 4px solid white;
+.contForm{
+  border:10px solid #2e9979;
 }
 
 #footer .copyright {
@@ -1035,7 +1052,7 @@ padding: 3% 10% 7% 10%;
   padding-top: 15px;
 }
 
-.inline-form {
+.inline-form{
   display: inline;
 }
 
@@ -1044,23 +1061,23 @@ padding: 3% 10% 7% 10%;
   font-size: 13px;
   color: #ddd;
 }
-#acropolis {
+#acropolis{
   width: 15rem;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-self: center;  
   position: relative;
   /* right: 25px; */
 }
-#codeSP {
+#codeSP{
   width: 15rem;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-self: center;  
   position: relative;
   /* right: 25px; */
 }
-#acm {
+#acm{
   width: 11rem;
   display: flex;
   justify-content: center;
@@ -1069,7 +1086,7 @@ padding: 3% 10% 7% 10%;
   /* top: 57px;
   left: 18px; */
 }
-#acmw {
+#acmw{
   width: 7rem;
   display: flex;
   justify-content: center;
@@ -1078,7 +1095,7 @@ padding: 3% 10% 7% 10%;
   /* top: 57px;
   left: 18px; */
 }
-#gdsc {
+#gdsc{
   width: 11rem;
   display: flex;
   justify-content: center;
@@ -1150,11 +1167,11 @@ padding: 3% 10% 7% 10%;
     padding: 15px 0;
     transition: all 0.5s;
   }
-  #header #logo img {
+  #header #logo img{
     bottom: 78px;
     /* left: -15px; */
     height: 6rem;
-  }
+  } 
 
   #nav-menu-container {
     display: none;
@@ -1164,6 +1181,7 @@ padding: 3% 10% 7% 10%;
     display: inline;
   }
 
+
   #intro .intro-container {
     top: 3rem;
   }
@@ -1172,7 +1190,7 @@ padding: 3% 10% 7% 10%;
     font-size: 34px;
     padding: 5px;
   }
-  #intro h1 span {
+  #intro h1 span{
     font-size: large;
     /* font-family: 'Montserrat'; */
   }
@@ -1180,9 +1198,10 @@ padding: 3% 10% 7% 10%;
     font-size: 16px;
     text-align: center;
     padding: 0 10px;
+    
   }
-
-  #intro .about-btn {
+  
+  #intro .about-btn{
     position: relative;
     bottom: 1rem;
   }
@@ -1192,10 +1211,11 @@ padding: 3% 10% 7% 10%;
 }
 
 @media (max-width: 770px) {
-  #header #logo img {
+
+  #header #logo img{
     bottom: 4rem;
   }
-  #footer .footer-top {
+  #footer .footer-top{
     padding: 30px 0px 30px 62px;
   }
 }
@@ -1232,44 +1252,47 @@ padding: 3% 10% 7% 10%;
     bottom: 5rem;
   }
 
-  .footLogo {
+ 
+
+  .footLogo{
     width: 40vw;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
   }
-  .footLogo2 {
+  .footLogo2{
     width: 25vw;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
   }
-  #acropolis {
+  #acropolis{
     width: 10rem;
     left: -3rem;
     bottom: 0rem;
   }
-  #codeSP {
+  #codeSP{
     width: 10rem;
     right: -8rem;
     bottom: 2.8rem;
   }
-  #acm {
+  #acm{
     width: 7rem;
     bottom: -4rem;
     right: 15rem;
   }
-  #acmw {
+  #acmw{
     width: 4rem;
     left: 3rem;
     bottom: -0.5rem;
+
   }
-  #gdsc {
+  #gdsc{
     left: 5rem;
     width: 7rem;
     bottom: 0rem;
   }
-  .section-header {
+  .section-header{
     margin-bottom: 30px;
   }
   #schedule .nav-tabs a {
@@ -1277,27 +1300,31 @@ padding: 3% 10% 7% 10%;
   }
 }
 
+
+
+
 @media (max-width: 330px) {
-  #header #logo img {
+
+  #header #logo img{
     bottom: 5rem;
-  }
+  } 
 
   .section-header::before {
     bottom: 1rem;
   }
 
-  .send-btn {
+  .send-btn{
     left: 0rem;
   }
 
-  #about p {
+  #about p{
     margin: 0 5px 20px 5px;
   }
-  #about h3 {
+  #about h3{
     text-align: center;
   }
 
-  #about .about-btn {
+  #about .about-btn{
     left: 4rem;
     position: absolute;
   }
@@ -1308,7 +1335,7 @@ padding: 3% 10% 7% 10%;
     margin-bottom: 10px;
     margin-top: -45px;
     color: #fff;
-  }
+}
 
   #intro h1 span {
     font-size: 20px;
@@ -1318,6 +1345,7 @@ padding: 3% 10% 7% 10%;
     font-size: 14px;
     text-align: center;
     padding: 0 0px;
+    
   }
 
   #acropolis {
@@ -1329,28 +1357,28 @@ padding: 3% 10% 7% 10%;
     width: 10rem;
     left: -0.5rem;
     bottom: 0.2rem;
-  }
+}
 
-  #acm {
+  #acm{
     width: 7rem;
     bottom: -0.5rem;
     left: 1.5rem;
   }
-  #gdsc {
+  #gdsc{
     /* left: 15px; */
     left: 1rem;
     width: 7rem;
     bottom: 0rem;
   }
 
-  #acmw {
+  #acmw{
     width: 4rem;
     left: 6.5rem;
     bottom: -0.5rem;
   }
   #footer .footer-top {
     padding: 0px 0px 0px 0px;
-  }
+}
 }
 @media (max-width: 460px) {
   #subscribe button {
@@ -1370,7 +1398,6 @@ padding: 3% 10% 7% 10%;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  font-family: "Bungee Spice";
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -1381,10 +1408,10 @@ padding: 3% 10% 7% 10%;
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid gold;
+  border: 2px solid #194b43;
 }
 
 #about .about-btn:hover {
-  background: rgb(19, 19, 19);
-  color: black;
+  background: #4c8971;
+  color: #fff;
 }
