@@ -1,35 +1,24 @@
-let = tabs1 = document.querySelectorAll('.tabs__toggle1'),
-    contents1 = document.querySelectorAll('.tabs__content1');
-let = tabs2 = document.querySelectorAll('.tabs__toggle2'),
-    contents2 = document.querySelectorAll('.tabs__content2');
+const elH = document.querySelectorAll(".timeline li > div");
 
+// START
+window.addEventListener("load", init);
 
-tabs1.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-        contents1.forEach((content) => {
-            content.classList.remove('is-active');
-        });
-        tabs1.forEach((tab)=> {
-            tab.classList.remove('is-active');
-        });
+function init() {
+  setEqualHeights(elH);
+}
 
-        contents1[index].classList.add('is-active');
-        tabs1[index].classList.add('is-active');
-    });
-});
+// SET EQUAL HEIGHTS
+function setEqualHeights(el) {
+  let counter = 0;
+  for (let i = 0; i < el.length; i++) {
+    const singleHeight = el[i].offsetHeight;
 
-tabs2.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-        contents2.forEach((content) => {
-            content.classList.remove('is-active');
-        });
-        tabs2.forEach((tab)=> {
-            tab.classList.remove('is-active');
-        });
+    if (counter < singleHeight) {
+      counter = singleHeight;
+    }
+  }
 
-        contents2[index].classList.add('is-active');
-        tabs2[index].classList.add('is-active');
-    });
-});
-
-// for carousel
+  for (let i = 0; i < el.length; i++) {
+    el[i].style.height = `${counter}px`;
+  }
+}
