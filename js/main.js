@@ -2,10 +2,14 @@ jQuery(document).ready(function( $ ) {
 
   // Back to top button
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 50) {
       $('.back-to-top').fadeIn('slow');
+      $('header').addClass("menu-onscroll");
+      $('.top-logo').fadeOut('2500');
     } else {
       $('.back-to-top').fadeOut('slow');
+      $('header').removeClass("menu-onscroll");
+      $('.top-logo').fadeIn('2500');
     }
   });
   $('.back-to-top').click(function(){
