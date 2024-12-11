@@ -152,6 +152,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+.dropdown-item a{
+  color: #212529;
+}
 
 /* ========================
     Desktop Nav
