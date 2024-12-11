@@ -353,7 +353,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/back.jpg");
+  background: url("../img/aboutback.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
