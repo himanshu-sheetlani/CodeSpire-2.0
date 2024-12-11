@@ -39,10 +39,12 @@ textarea {
 .contact-tag > h2 {
   margin-top: 30px;
   position: relative;
-
-  color: whitesmoke;
-  font-family: "Bungee Spice";
+  font-family: "Amatic SC", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
+
 
 .form {
   width: 100%;
